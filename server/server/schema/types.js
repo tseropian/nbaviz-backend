@@ -10,4 +10,17 @@ export default `
     key: String,
     conference: String
   },
+  type Ranking {
+    id: ID,
+    season: Int,
+    date: String,
+    conference: String,
+    team: String,
+    position: Int,
+    wins: Int,
+    losses: Int,
+    gamesBehind: Int,
+    psg: Float,
+    pag: Float
+  },
 `;
