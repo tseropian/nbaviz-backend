@@ -13,6 +13,7 @@ module.exports = (sequelize, DataTypes) => {
     name: DataTypes.STRING,
     key: DataTypes.STRING,
     conference: DataTypes.STRING,
+    color: DataTypes.STRING,
     city: DataTypes.STRING
   }, {});
   Team.associate = function(models) {

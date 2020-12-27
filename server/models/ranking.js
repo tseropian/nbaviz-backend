@@ -2,6 +2,7 @@
 module.exports = (sequelize, DataTypes) => {
   const Ranking = sequelize.define('Ranking', {
     season: DataTypes.INTEGER,
+    weekNb: DataTypes.INTEGER,
     date: DataTypes.DATE,
     conference: DataTypes.STRING,
     team: DataTypes.STRING,

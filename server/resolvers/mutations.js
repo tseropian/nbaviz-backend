@@ -1,3 +1,8 @@
+const getNbWeeks = (dt2, dt1) => {
+  let nbWeeks =(dt2.getTime() - dt1.getTime()) / 1000;
+  nbWeeks /= (60 * 60 * 24);
+  return Math.abs(Math.round(nbWeeks/7));
+}
 export default {
   addCategory: (parent, args, { db }, info) => {
     return db.Categories.create({
@@ -6,6 +11,20 @@ export default {
       updatedAt: new Date()
     }).then(newCat => {
       return db.Categories.findAll();
+    });
+  },
+  addSeason: (parent, args, { db }, info) => {
+    const params = {
+      year: args.year,
+      weekNb: getNbWeeks(new Date(args.endDate), new Date(args.startDate)),
+      startDate: args.startDate,
+      endDate: args.endDate,
+      createdAt: new Date(),
+      updatedAt: new Date()
+    };
+
+    return db.Season.create(params).then(newCat => {
+      return db.Season.findAll();
     });
   },
   addRanking: (parent, args, { db }, info) => {
@@ -23,6 +42,7 @@ export default {
       createdAt: new Date(),
       updatedAt: new Date()
     }).then(newRank => {
+      console.log(newRankR)
       return db.Ranking.findAll();
     });
   }

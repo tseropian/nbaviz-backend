@@ -19,5 +19,8 @@ export default {
   teams: (parent, args, { db }, info) => {
     return db.Team.findAll();
   },
+  seasons: (parent, args, { db }, info) => {
+    return db.Season.findAll();
+  },
 
 };

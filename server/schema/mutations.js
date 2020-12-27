@@ -4,7 +4,22 @@ export default `
     addCategory(categoryName: String): [Category!]
     addRanking(
       team: String,
-      season: Int,
+      season: Int,    
+      weekNb: Int,
+      date: String,
+      conference: String,
+      position: Int,
+      wins: Int,
+      losses: Int,
+      gamesBehind: Int,
+      psg: Float,
+      pag: Float
       ): [Ranking!]
+      addSeason(
+        year: Int,
+        weekNb: Int,    
+        startDate: String,
+        endDate: String
+        ): [Season!]
   }
 `;

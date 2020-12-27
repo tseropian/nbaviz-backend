@@ -23,4 +23,11 @@ export default `
     psg: Float,
     pag: Float
   },
+  type Season {
+    year: Int,
+    startDate: String,
+    endDate: String,
+    weekNb: Int,
+
+  },
 `;

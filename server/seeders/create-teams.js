@@ -34,7 +34,6 @@ module.exports = {
         {city: 'Sacramento',  name: 'Kings', key: 'SAC', conference: 'W', createdAt: new Date(), updatedAt: new Date() },
         {city: 'San Antonio',  name: 'Spurs', key: 'SAS', conference: 'W', createdAt: new Date(), updatedAt: new Date() },
         {city: 'Utah',  name: 'Jazz', key: 'UTA', conference: 'W', createdAt: new Date(), updatedAt: new Date() },
-
       ],
       {}
     );

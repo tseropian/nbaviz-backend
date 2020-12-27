@@ -1,5 +1,5 @@
 {
-  "name": "nbavizs  ",
+  "name": "nbavizz-backend",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -20,9 +20,9 @@
     "express": "^4.16.4",
     "graphql": "^14.0.2",
     "graphql-tools": "^4.0.3",
+    "moment": "^2.29.1",
     "mysql2": "^1.7.0",
     "nodemon": "^1.18.4",
-    "pg": "^7.4.3",
     "sequelize": "^4.44.3",
     "sequelize-cli": "^5.5.1"
   }
