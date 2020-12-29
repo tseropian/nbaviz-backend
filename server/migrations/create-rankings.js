@@ -30,7 +30,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       gamesBehind: {
-        type: Sequelize.INTEGER
+        type: Sequelize.FLOAT
       },
       psg: {
         type: Sequelize.FLOAT

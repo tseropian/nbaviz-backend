@@ -36,13 +36,13 @@ export default {
       position: args.position,
       wins: args.wins,
       losses: args.losses,
-      gamesBehind: args.gb,
+      gamesBehind: args.gamesBehind,
       psg: args.psg,
       pag: args.pag,
       createdAt: new Date(),
       updatedAt: new Date()
     }).then(newRank => {
-      console.log(newRankR)
+      console.log(newRank)
       return db.Ranking.findAll();
     });
   }

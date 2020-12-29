@@ -14,7 +14,16 @@ module.exports = {
       createdAt: {
         type: Sequelize.INTEGER
       },
+      startSeason: {
+        type: Sequelize.INTEGER
+      },
+      endSeason: {
+        type: Sequelize.INTEGER
+      },
       city: {
+        type: Sequelize.STRING
+      },
+      colour: {
         type: Sequelize.STRING
       },
       name: {

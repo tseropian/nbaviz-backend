@@ -6,6 +6,7 @@ export default `
   type Team {
     id: ID,
     city: String,
+    colour: String,
     name: String,
     key: String,
     conference: String

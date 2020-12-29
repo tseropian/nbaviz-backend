@@ -2,20 +2,21 @@ import types from "./types";
 export default `
   type Mutation {
     addCategory(categoryName: String): [Category!]
+    
     addRanking(
       team: String,
       season: Int,    
-      weekNb: Int,
       date: String,
       conference: String,
       position: Int,
       wins: Int,
       losses: Int,
-      gamesBehind: Int,
+      gamesBehind: Float,
       psg: Float,
       pag: Float
       ): [Ranking!]
-      addSeason(
+
+    addSeason(
         year: Int,
         weekNb: Int,    
         startDate: String,
