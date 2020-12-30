@@ -1,4 +1,3 @@
-'use strict';
 module.exports = (sequelize, DataTypes) => {
   const Team = sequelize.define('Team', {
     id: {
@@ -6,7 +5,7 @@ module.exports = (sequelize, DataTypes) => {
       primaryKey: true,
       defaultValue: DataTypes.INTEGER,
       allowNull: false,
-      autoIncrement: true
+      autoIncrement: true,
     },
     updatedAt: DataTypes.INTEGER,
     createdAt: DataTypes.INTEGER,
@@ -16,10 +15,9 @@ module.exports = (sequelize, DataTypes) => {
     city: DataTypes.STRING,
     colour: DataTypes.STRING,
     startSeason: DataTypes.INTEGER,
-    endSeason: DataTypes.INTEGER
-    : 
+    endSeason: DataTypes.INTEGER,
   }, {});
-  Team.associate = function(models) {
+  Team.associate = function (models) {
     // associations can be defined here
   };
   return Team;
