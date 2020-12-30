@@ -9,7 +9,9 @@ export default `
     colour: String,
     name: String,
     key: String,
-    conference: String
+    conference: String,
+    startSeason: Int,
+    endSeason: Int,
   },
   type Ranking {
     id: ID,
