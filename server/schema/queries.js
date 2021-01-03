@@ -6,7 +6,13 @@ export default `
 
     seasons(year: String): [Season!],
         
-    teams(city: String, name: String, key: String, conference: String): [Team!]
+    teams(
+      city: String, 
+      name: String, 
+      key: String, 
+      conference: String, 
+      year: Int
+    ): [Team!]
   
     rankings(season: String, teams: String): [Ranking!]
   }

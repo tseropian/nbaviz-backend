@@ -1,6 +1,29 @@
 export default {
   teams: (parent, args, { db }, info) => {
-    const where = args.conference ? { conference: args.conference } : {};
+    const { Op } = db.Sequelize;
+    const { year } = args;
+    const where = {
+      [Op.and]: [
+        {
+          startSeason: { [Op.lte]: year },
+        },
+        {
+          [Op.or]: [
+            {
+              endSeason: { [Op.gte]: year },
+            },
+            {
+              endSeason: 0,
+            },
+          ],
+        },
+      ],
+    };
+
+    if (args.conference) {
+      where.conference = args.conference;
+    }
+
     return db.Team.findAll({ where });
   },
   seasons: (parent, args, { db }, info) => {
@@ -10,10 +33,8 @@ export default {
   },
   rankings: async (parent, args, { db }, info) => {
     const { season, teams } = args;
-    console.log(teams);
     const listTeams = teams.split(',');
     const currentSeason = await db.Season.findOne({ where: { year: season } });
-    console.log(listTeams);
     const allRankings = await db.Ranking.findAll(
       {
         where: {
