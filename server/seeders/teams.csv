@@ -1,38 +1,38 @@
-ATL,Atlanta,Hawks,c8102e,1969,
-BOS,Boston,Celtics,007a30,1947,
-CHA,Charlotte,Hornets,,2015,
-CHA,Charlotte,Bobcats,,2005,2014
-CHA,Charlotte,Hornets,,1989,2002
-BKN,Brooklyn,Nets,,2013,
-CLE,Cleveland,Cavaliers,,1971,
-DAL,Dallas,Mavericks,,1981,
-DEN,Denver,Nuggets,,1977,
-DET,Dettroit,Pistons,,1958,
-GSW,Golden State,Warriors,,1972,
-HOU,Houston,Rockets,,1972,
-IND,Indiana,Pacers,,1977,
-LAC,Los Angeles,Clippers,,1985,
-LAL,Los Angeles,Lakers,,1961,
-MEM,Memphis,Grizzlies,,2002,
-MIL,Milwaukee,Bucks,,1969,
-MIN,Minnesotta,Timberwolves,,1990,
-MIA,Miami,Heat,,1989,
-CHI,Chicago,Bulls,,1967,
-NOP,New Orleans,Pelicans,,2014,
-NYK,New York,Knicks,,1947,
-NJN,New Jersey,Nets,,1978,2012
-OKC,Oklahoma City,Thunder,,2009,
-ORL,Orlando,Magic,,1990,
-PHI,Philadelphia,76ers,,1964,
-PHO,Phoenix,Suns,,1969,
-PTB,Portland,Trail Blazers,,1971,
-TOR,Toronto,Raptors,,1996,
-SAC,Sacramento,Kings,,1986,
-SAS,San Antonio,Spurs,,1977,
-SEA,Seattle,SuperSonics,,1968,2008
-NOH,New Orleans,Hornets,,2003,2013
-UTA,Utah,Jazz,,1980,
-WAS,Washington,Bullets,,1975,1997
-WAS,Washington,Wizards,,1998,
-NOK,New Orleans/Oklahoma City,Hornets,,2006,2007
-VAN,Vancouver,Grizzlies,,1996,2001
+ATL,Atlanta,Hawks,c8102e,1969,,E
+BKN,Brooklyn,Nets,,2013,,E
+BOS,Boston,Celtics,007a30,1947,,E
+CHA,Charlotte,Hornets,,2015,,E
+CHA,Charlotte,Bobcats,,2005,2014,E
+CHA,Charlotte,Hornets,,1989,2002,E
+CHI,Chicago,Bulls,,1967,,E
+CLE,Cleveland,Cavaliers,,1971,,E
+DAL,Dallas,Mavericks,,1981,,W
+DEN,Denver,Nuggets,,1977,,W
+DET,Detroit,Pistons,,1958,,E
+GSW,Golden State,Warriors,,1972,,W
+HOU,Houston,Rockets,,1972,,W
+IND,Indiana,Pacers,,1977,,E
+LAC,Los Angeles,Clippers,,1985,,W
+LAL,Los Angeles,Lakers,,1961,,W
+MEM,Memphis,Grizzlies,,2002,,W
+MIA,Miami,Heat,,1989,,E
+MIL,Milwaukee,Bucks,,1969,,E
+MIN,Minnesota,Timberwolves,,1990,,W
+NJN,New Jersey,Nets,,1978,,E
+NOH,New Orleans,Hornets,,2003,2013,W
+NOK,New Orleans/Oklahoma City,Hornets,,2006,2007,W
+NOP,New Orleans,Pelicans,,2014,,W
+NYK,New York,Knicks,,1947,,E
+OKC,Oklahoma City,Thunder,,2009,,W
+ORL,Orlando,Magic,,1990,,E
+PHI,Philadelphia,76ers,,1964,,E
+PHO,Phoenix,Suns,,1969,,W
+PTB,Portland,Trail Blazers,,1971,,W
+SAC,Sacramento,Kings,,1986,,W
+SAS,San Antonio,Spurs,,1977,,W
+SEA,Seattle,SuperSonics,,1968,2008,W
+TOR,Toronto,Raptors,,1996,,E
+UTA,Utah,Jazz,,1980,,W
+VAN,Vancouver,Grizzlies,,1996,2001,W
+WAS,Washington,Bullets,,1975,1997,E
+WAS,Washington,Wizards,,1998,,E

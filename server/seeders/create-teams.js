@@ -19,6 +19,7 @@ module.exports = {
           colour: team[3],
           startSeason: Number(team[4]),
           endSeason: Number(team[5]),
+          conference: team[6],
           createdAt: new Date(),
           updatedAt: new Date(),
         },
