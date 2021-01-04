@@ -32,21 +32,33 @@ export default {
     return db.Season.findAll({ where });
   },
   rankings: async (parent, args, { db }, info) => {
+    const { Op } = db.Sequelize;
+
     const { season, teams } = args;
     const listTeams = teams.split(',');
     const currentSeason = await db.Season.findOne({ where: { year: season } });
     const allRankings = await db.Ranking.findAll(
       {
         where: {
-          date: { $gte: currentSeason.startDate },
-          date: { $lte: currentSeason.endDate },
-          team: { $in: listTeams },
+          [Op.and]: [
+            {
+              date: { $gte: currentSeason.startDate },
+            },
+            {
+              date: { $lte: currentSeason.endDate },
+            },
+            {
+              team: { $in: listTeams },
+
+            },
+          ],
         },
-        order: [['date', 'DESC']],
+        order: [['date', 'ASC']],
       },
     );
     // console.log(allRankings);
-
+    const mappedResult = await allRankings.map((r) => r.date);
+    console.log(mappedResult);
     return allRankings;
   },
 
