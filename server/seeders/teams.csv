@@ -1,38 +1,38 @@
-ATL,Atlanta,Hawks,c8102e,1969,,E
-BKN,Brooklyn,Nets,,2013,,E
-BOS,Boston,Celtics,007a30,1947,,E
-CHA,Charlotte,Hornets,,2015,,E
-CHA,Charlotte,Bobcats,,2005,2014,E
-CHA,Charlotte,Hornets,,1989,2002,E
-CHI,Chicago,Bulls,,1967,,E
-CLE,Cleveland,Cavaliers,,1971,,E
-DAL,Dallas,Mavericks,,1981,,W
-DEN,Denver,Nuggets,,1977,,W
-DET,Detroit,Pistons,,1958,,E
-GSW,Golden State,Warriors,,1972,,W
-HOU,Houston,Rockets,,1972,,W
-IND,Indiana,Pacers,,1977,,E
-LAC,Los Angeles,Clippers,,1985,,W
-LAL,Los Angeles,Lakers,,1961,,W
-MEM,Memphis,Grizzlies,,2002,,W
-MIA,Miami,Heat,,1989,,E
-MIL,Milwaukee,Bucks,,1969,,E
-MIN,Minnesota,Timberwolves,,1990,,W
-NJN,New Jersey,Nets,,1978,2012,E
-NOH,New Orleans,Hornets,,2003,2013,W
-NOK,New Orleans/Oklahoma City,Hornets,,2006,2007,W
-NOP,New Orleans,Pelicans,,2014,,W
-NYK,New York,Knicks,,1947,,E
-OKC,Oklahoma City,Thunder,,2009,,W
-ORL,Orlando,Magic,,1990,,E
-PHI,Philadelphia,76ers,,1964,,E
-PHO,Phoenix,Suns,,1969,,W
-PTB,Portland,Trail Blazers,,1971,,W
-SAC,Sacramento,Kings,,1986,,W
-SAS,San Antonio,Spurs,,1977,,W
-SEA,Seattle,SuperSonics,,1968,2008,W
-TOR,Toronto,Raptors,,1996,,E
-UTA,Utah,Jazz,,1980,,W
-VAN,Vancouver,Grizzlies,,1996,2001,W
-WAS,Washington,Bullets,,1975,1997,E
-WAS,Washington,Wizards,,1998,,E
+ATL,Atlanta,Hawks,#e03a3e,1969,,E
+BKN,Brooklyn,Nets,#000000,2013,,E
+BOS,Boston,Celtics,#008348,1947,,E
+CHA,Charlotte,Hornets,#00778c,2015,,E
+CHA,Charlotte,Bobcats,#002b5b,2005,2014,E
+CHA,Charlotte,Hornets,#00778c,1989,2002,E
+CHI,Chicago,Bulls,#bc032b,1967,,E
+CLE,Cleveland,Cavaliers,#71253d,1971,,E
+DAL,Dallas,Mavericks,#007dc5,1981,,W
+DEN,Denver,Nuggets,#0d213e,1977,,W
+DET,Detroit,Pistons,#1d428a,1958,,E
+GSW,Golden State,Warriors,##1d428a,1972,,W
+HOU,Houston,Rockets,#cc1244,1972,,W
+IND,Indiana,Pacers,#04265c,1977,,E
+LAC,Los Angeles,Clippers,#1d428a,1985,,W
+LAL,Los Angeles,Lakers,#552583,1961,,W
+MEM,Memphis,Grizzlies,#24365c,2002,,W
+MIA,Miami,Heat,#98002e,1989,,E
+MIL,Milwaukee,Bucks,#00471b,1969,,E
+MIN,Minnesota,Timberwolves,#0c2340,1990,,W
+NJN,New Jersey,Nets,#04295c,1978,2012,E
+NOH,New Orleans,Hornets,#047e8c,2003,2013,W
+NOK,New Orleans/Oklahoma City,Hornets,#047e8c,2006,2007,W
+NOP,New Orleans,Pelicans,#b4975a,2014,,W
+NYK,New York,Knicks,#006bb6,1947,,E
+OKC,Oklahoma City,Thunder,#f05133,2009,,W
+ORL,Orlando,Magic,#0b77bd,1990,,E
+PHI,Philadelphia,76ers,#006bb6,1964,,E
+PHO,Phoenix,Suns,#f9a01b,1969,,W
+PTB,Portland,Trail Blazers,#e03a3e,1971,,W
+SAC,Sacramento,Kings,#5b2b82,1986,,W
+SAS,San Antonio,Spurs,#8a8d8f,1977,,W
+SEA,Seattle,SuperSonics,#045a34,1968,2008,W
+TOR,Toronto,Raptors,#0d2240,1996,,E
+UTA,Utah,Jazz,#0d2240,1980,,W
+VAN,Vancouver,Grizzlies,#1C998C,1996,2001,W
+WAS,Washington,Bullets,#14029C,1975,1997,E
+WAS,Washington,Wizards,#cc092f,1998,,E
