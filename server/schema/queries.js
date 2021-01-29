@@ -2,14 +2,14 @@
 
 export default `
   type Query {
-    categories: [Category!],
 
     seasons(year: String): [Season!],
         
     teams(
       city: String, 
       name: String, 
-      key: String, 
+      key: String,
+      colour: String, 
       conference: String, 
       year: Int
     ): [Team!]

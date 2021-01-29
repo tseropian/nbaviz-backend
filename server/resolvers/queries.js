@@ -56,9 +56,6 @@ export default {
         order: [['date', 'ASC']],
       },
     );
-    // console.log(allRankings);
-    const mappedResult = await allRankings.map((r) => r.date);
-    console.log(mappedResult);
     return allRankings;
   },
 
