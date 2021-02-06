@@ -15,5 +15,7 @@ export default `
     ): [Team!]
   
     rankings(season: String, teams: String): [Ranking!]
+
+    seasonRankings(teams: String): [Ranking!]
   }
 `;
