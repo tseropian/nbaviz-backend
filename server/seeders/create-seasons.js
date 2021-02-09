@@ -2,14 +2,14 @@ const fs = require('fs');
 
 const buildDate = (dateString) => {
   const dateParts = dateString.split('/');
-  return new Date(+dateParts[2], dateParts[1] - 1, +dateParts[0]);
+  return new Date(+dateParts[2], dateParts[1] - 1, +dateParts[0], 0, 0, 0);
 };
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
     const seasons = [];
 
-    const buffer = fs.readFileSync('./seeders/seasons.csv')
+    const buffer = fs.readFileSync('./server/seeders/seasons.csv')
       .toString()
       .split('\r\n');
 
