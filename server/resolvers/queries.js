@@ -1,3 +1,5 @@
+const { buildSeasonHighLow } = require('./highLow');
+
 export default {
   teams: (parent, args, { db }, info) => {
     const { Op } = db.Sequelize;
@@ -64,7 +66,6 @@ export default {
     const { teams } = args;
     const listTeams = teams.split(',');
     const allSeasons = await db.Season.findAll();
-
     const allSeasonsEndDates = allSeasons.map((s) => s.endDate);
 
     const allRankings = await db.Ranking.findAll(
@@ -85,5 +86,11 @@ export default {
     );
     return allRankings;
   },
-
+  seasonHighLow: async (parent, args, { db }, info) => {
+    const allSeasons = await db.Season.findAll({});
+    const result = allSeasons.map(
+      (season) => buildSeasonHighLow(season, db),
+    );
+    return result;
+  },
 };

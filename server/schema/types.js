@@ -33,4 +33,12 @@ export default `
     weekNb: Int,
 
   },
+  type HighLow {
+    year: Int,
+    highDelta: String,
+    highTeams: [String],
+    lowDelta: String,
+    lowTeams: [String],
+
+  },
 `;

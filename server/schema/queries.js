@@ -17,5 +17,7 @@ export default `
     rankings(season: String, teams: String): [Ranking!]
 
     seasonRankings(teams: String): [Ranking!]
+    
+    seasonHighLow(year: String): [HighLow!]
   }
 `;
