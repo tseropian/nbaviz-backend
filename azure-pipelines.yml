@@ -14,12 +14,7 @@ steps:
   inputs:
     versionSpec: '12.x'
   displayName: 'Install Node.js'
-
-- script: |
-    yarn
-    yarn start
-  displayName: 'npm install and build'
-  
+ 
 - task: CopyFilesOverSSH@0
   inputs:
     sshEndpoint: belphegor
@@ -30,3 +25,10 @@ steps:
     overwrite: true
     failOnEmptySource: false # Optional
     flattenFolders: false # Optional
+  displayName: 'copy files to server'
+
+- task: SSH@0
+  inputs: 
+    sshEndpoint: belphegor
+    runOptions: commands
+    commands: cd /home/thomas/hoopcharts/backend && yarn
