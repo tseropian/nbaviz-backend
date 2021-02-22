@@ -19,3 +19,14 @@ steps:
     yarn
     yarn start
   displayName: 'npm install and build'
+  
+- task: CopyFilesOverSSH@0
+  inputs:
+    sshEndpoint: thomas@belphegor.notsaved.org
+    #sourceFolder: # Optional
+    contents: '**' 
+    targetFolder: /home/thomas/hoopcharts/backend
+    cleanTargetFolder: true
+    overwrite: true
+    failOnEmptySource: false # Optional
+    flattenFolders: false # Optional
