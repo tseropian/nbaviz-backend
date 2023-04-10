@@ -1,4 +1,5 @@
-const { buildSeasonHighLow } = require('./highLow');
+import buildSeasonHighLow from './highLow.js';
+import db from '../models/index.js';
 
 export default {
   teams: (parent, args, { db }, info) => {
@@ -28,7 +29,7 @@ export default {
 
     return db.Team.findAll({ where });
   },
-  seasons: (parent, args, { db }, info) => {
+  seasons: (parent, args) => {
     const where = args.year ? { year: args.year } : {};
 
     return db.Season.findAll({ where });

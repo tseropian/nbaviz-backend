@@ -1,5 +1,6 @@
-import mutations from './mutations';
-import queries from './queries';
-import types from './types';
+/* eslint-disable import/extensions */
+import mutations from './mutations.js';
+import queries from './queries.js';
+import types from './types.js';
 
 export default types.concat(queries, mutations);

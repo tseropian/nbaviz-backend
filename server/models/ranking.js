@@ -1,5 +1,4 @@
-'use strict';
-module.exports = (sequelize, DataTypes) => {
+export default (sequelize, DataTypes) => {
   const Ranking = sequelize.define('Ranking', {
     season: DataTypes.INTEGER,
     date: DataTypes.DATE,
@@ -10,10 +9,7 @@ module.exports = (sequelize, DataTypes) => {
     losses: DataTypes.INTEGER,
     gamesBehind: DataTypes.INTEGER,
     psg: DataTypes.FLOAT,
-    pag: DataTypes.FLOAT
+    pag: DataTypes.FLOAT,
   }, {});
-  Ranking.associate = function(models) {
-    // associations can be defined here
-  };
   return Ranking;
 };

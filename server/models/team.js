@@ -1,4 +1,4 @@
-module.exports = (sequelize, DataTypes) => {
+export default (sequelize, DataTypes) => {
   const Team = sequelize.define('Team', {
     id: {
       type: DataTypes.INTEGER,
@@ -17,8 +17,6 @@ module.exports = (sequelize, DataTypes) => {
     startSeason: DataTypes.INTEGER,
     endSeason: DataTypes.INTEGER,
   }, {});
-  Team.associate = function (models) {
-    // associations can be defined here
-  };
+
   return Team;
 };

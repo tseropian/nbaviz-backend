@@ -94,4 +94,4 @@ const buildSeasonHighLow = async (season, db) => {
   return highLow;
 };
 
-module.exports = { buildSeasonHighLow };
+export default buildSeasonHighLow;
