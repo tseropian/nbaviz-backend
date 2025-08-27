@@ -1,4 +1,4 @@
-import types from './types';
+import types from './types.js';
 
 export default `
   type Mutation {

@@ -1,5 +1,4 @@
-'use strict';
-module.exports = (sequelize, DataTypes) => {
+export default (sequelize, DataTypes) => {
   const Season = sequelize.define('Season', {
     year: DataTypes.INTEGER,
     weekNb: DataTypes.INTEGER,

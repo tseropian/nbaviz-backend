@@ -1,11 +1,20 @@
-require('dotenv').config();
-const fs = require('fs');
-const path = require('path');
-const Sequelize = require('sequelize');
+import 'dotenv/config';
+import fs from 'fs';
+import path from 'path';
+import { Sequelize, DataTypes } from 'sequelize';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const basename = path.basename(__filename);
 const env = process.env.NODE_ENV || 'development';
-const config = require(`${__dirname}/../config/config.js`)[env];
+
+// Import config as ES module
+const configModule = await import(`${__dirname}/../config/config.js`);
+const config = configModule.default[env];
+
 const db = {};
 
 const sequelize = new Sequelize(
@@ -14,15 +23,17 @@ const sequelize = new Sequelize(
   process.env.DB_PASSWORD,
   config,
 );
-
-fs.readdirSync(__dirname)
+console.log('Database connected', sequelize.config);
+const modelFiles = fs.readdirSync(__dirname)
   .filter((file) => (
     file.indexOf('.') !== 0 && file !== basename && file.slice(-3) === '.js'
-  ))
-  .forEach((file) => {
-    const model = sequelize.import(path.join(__dirname, file));
-    db[model.name] = model;
-  });
+  ));
+
+for (const file of modelFiles) {
+  const modelModule = await import(path.join(__dirname, file));
+  const model = modelModule.default(sequelize, DataTypes);
+  db[model.name] = model;
+}
 
 Object.keys(db).forEach((modelName) => {
   if (db[modelName].associate) {
@@ -33,4 +44,4 @@ Object.keys(db).forEach((modelName) => {
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
-module.exports = db;
+export default db;

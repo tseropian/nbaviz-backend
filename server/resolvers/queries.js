@@ -1,4 +1,4 @@
-const { buildSeasonHighLow } = require('./highLow');
+import { buildSeasonHighLow } from './highLow.js';
 
 export default {
   teams: (parent, args, { db }, info) => {
@@ -44,14 +44,13 @@ export default {
         where: {
           [Op.and]: [
             {
-              date: { $gte: currentSeason.startDate },
+              date: { [Op.gte]: currentSeason.startDate },
             },
             {
-              date: { $lte: currentSeason.endDate },
+              date: { [Op.lte]: currentSeason.endDate },
             },
             {
-              team: { $in: listTeams },
-
+              team: { [Op.in]: listTeams },
             },
           ],
         },
@@ -73,11 +72,10 @@ export default {
         where: {
           [Op.and]: [
             {
-              date: { $in: allSeasonsEndDates },
+              date: { [Op.in]: allSeasonsEndDates },
             },
             {
-              team: { $in: listTeams },
-
+              team: { [Op.in]: listTeams },
             },
           ],
         },

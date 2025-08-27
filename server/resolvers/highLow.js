@@ -28,10 +28,10 @@ const buildSeasonHighLow = async (season, db) => {
       where: {
         [Op.and]: [
           {
-            date: { $gte: season.startDate },
+            date: { [Op.gte]: season.startDate },
           },
           {
-            date: { $lte: season.endDate },
+            date: { [Op.lte]: season.endDate },
           },
         ],
       },
@@ -94,4 +94,4 @@ const buildSeasonHighLow = async (season, db) => {
   return highLow;
 };
 
-module.exports = { buildSeasonHighLow };
+export { buildSeasonHighLow };
